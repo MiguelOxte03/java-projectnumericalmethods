@@ -20,6 +20,7 @@ public class Projectnumericalmethods extends JFrame{
     private double tenervalorreal;
 
     public Projectnumericalmethods(){
+	    //Con el super se le anade el nombre a la parte superior de la ventana
         super("Proyecto Metodos numericos");
         
         res =new JLabel("Resultado obtenido");
