@@ -20,6 +20,8 @@ public class Projectnumericalmethods extends JFrame{
     private double tenervalorreal;
 
     public Projectnumericalmethods(){
+        super("Proyecto Metodos numericos");
+        
         res =new JLabel("Resultado obtenido");
         vreal =new JLabel("Valor real");
         vaproxi =new JLabel("Valor aproximado");
@@ -74,7 +76,11 @@ public class Projectnumericalmethods extends JFrame{
     
     ButtonGroup absoorela= new ButtonGroup();
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Projectnumericalmethods aplicacion=new Projectnumericalmethods();
+        aplicacion.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        aplicacion.setSize(475,250);
+        aplicacion.setVisible(true);
     }
      private class manejareventos implements ActionListener{
         public void actionPerformed(ActionEvent accion){
