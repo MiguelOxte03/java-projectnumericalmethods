@@ -30,6 +30,39 @@ public class Projectnumericalmethods extends JFrame{
         redondear=new JButton("Redondeo");
         truncar=new JButton("Truncar");
         limpiar=new JButton("Limpiar");
+        
+        este=new JPanel();
+        este.setLayout(new GridLayout(8,1));
+        este.add(vreal);
+        este.add(valorreal);
+        este.add(vaproxi);
+        este.add(valoraproximado);
+        absoorela.add(absoluto);
+        absoorela.add(relativo);
+        este.add(absoluto);
+        este.add(relativo);
+        este.add(numcifr);
+        este.add(numcifras);
+        
+        JPanel resultado1=new JPanel();
+        FlowLayout ordenar=new FlowLayout();
+        resultado1.setLayout(ordenar);
+        resultado1.add(res);
+        resultado1.add(resultado);
+        
+        JPanel botones=new JPanel();
+        FlowLayout orde=new FlowLayout();
+        botones.setLayout(orde);
+        botones.add(redondear);
+        botones.add(truncar);
+        botones.add(limpiar);
+        
+        
+        Container paneles=new Container();
+        paneles=getContentPane();
+        paneles.add(este,BorderLayout.WEST);
+        paneles.add(resultado1,BorderLayout.CENTER);
+        paneles.add(botones,BorderLayout.SOUTH);
     }
     
     ButtonGroup absoorela= new ButtonGroup();
